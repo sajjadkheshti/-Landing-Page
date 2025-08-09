@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Landing Page - Our Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-gray-50 dark:bg-gray-950 font-poppins transition-colors duration-300">
+<!-- Navigation Bar -->
+<nav class="bg-gradient-to-r from-blue-900 to-blue-700 dark:from-gray-900 dark:to-gray-800 text-white fixed w-full top-0 z-50 shadow-xl">
+    <div class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+        <div class="flex items-center">
+            <i class="fas fa-rocket text-2xl mr-2 text-amber-500 dark:text-cyan-400"></i>
+            <h1 class="text-2xl font-bold">Our Product</h1>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8 mt-4 sm:mt-0">
+            <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8">
+                <li><a href="#intro" class="hover:text-amber-400 dark:hover:text-cyan-300 transition-all duration-300 hover:scale-105 inline-block">Intro</a></li>
+                <li><a href="#features" class="hover:text-amber-400 dark:hover:text-cyan-300 transition-all duration-300 hover:scale-105 inline-block">Features</a></li>
+                <li><a href="#portfolio" class="hover:text-amber-400 dark:hover:text-cyan-300 transition-all duration-300 hover:scale-105 inline-block">Portfolio</a></li>
+                <li><a href="#contact" class="hover:text-amber-400 dark:hover:text-cyan-300 transition-all duration-300 hover:scale-105 inline-block">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="text-xl focus:outline-none">
+                <i class="fas fa-moon text-amber-500 dark:text-cyan-400"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="bg-gradient-to-b from-blue-900 to-blue-600 dark:from-gray-900 dark:to-gray-700 text-white pt-24 pb-16">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-3xl sm:text-5xl font-bold" data-aos="zoom-in">A Product for the Future</h1>
+        <p class="mt-4 text-lg sm:text-xl max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+            A smart solution for faster and better business management
+        </p>
+        <a
+                href="#contact"
+                class="mt-6 inline-block bg-amber-500 dark:bg-cyan-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-amber-600 dark:hover:bg-cyan-700 transition-all duration-300 transform hover:scale-105"
+                data-aos="fade-up"
+                data-aos-delay="200"
+        >
+            Get Started
+        </a>
+    </div>
+</header>
+
+<!-- Intro Section -->
+<section id="intro" class="py-16 bg-white dark:bg-gray-950">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl sm:text-4xl font-semibold mb-8 text-blue-900 dark:text-white" data-aos="fade-up">Why Choose Us?</h2>
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2" data-aos="fade-right">
+                <img
+                        src="../harkat/4.jpg"
+                        alt="Our Product"
+                        class="rounded-xl shadow-lg w-full"
+                >
+            </div>
+            <div class="md:w-1/2 text-left" data-aos="fade-left">
+                <p class="text-base sm:text-lg text-gray-700 dark:text-gray-200 mb-4">
+                    Our product is designed with cutting-edge technology to deliver an unparalleled experience.
+                </p>
+                <p class="text-base sm:text-lg text-gray-700 dark:text-gray-200">
+                    From a simple interface to advanced features, everything is built for your success.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="bg-gray-100 dark:bg-gray-900 py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl sm:text-4xl font-semibold text-center mb-12 text-blue-900 dark:text-white" data-aos="fade-up">Product Features</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-mobile-alt text-4xl text-amber-500 dark:text-cyan-400 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2 text-blue-900 dark:text-white">Responsive</h3>
+                <p class="text-gray-600 dark:text-gray-200">Compatible with all devices</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-rocket text-4xl text-amber-500 dark:text-cyan-400 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2 text-blue-900 dark:text-white">Fast</h3>
+                <p class="text-gray-600 dark:text-gray-200">Lightning-fast loading and performance</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-shield-alt text-4xl text-amber-500 dark:text-cyan-400 mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2 text-blue-900 dark:text-white">Secure</h3>
+                <p class="text-gray-600 dark:text-gray-200">Complete protection for your data</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-16 bg-white dark:bg-gray-950">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl sm:text-4xl font-semibold text-center mb-12 text-blue-900 dark:text-white" data-aos="fade-up">Our Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                <img src="../harkat/4.jpg" alt="Project 1" class="w-full rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2 text-blue-900 dark:text-white">Business Management</h3>
+                <p class="text-gray-600 dark:text-gray-200">A tool to streamline corporate processes.</p>
+                <a href="#" class="mt-4 inline-block text-amber-500 dark:text-cyan-400 hover:text-amber-400 dark:hover:text-cyan-300 transition-all duration-300">View Details</a>
+            </div>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+                <img src="../harkat/4.jpg" alt="Project 2" class="w-full rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2 text-blue-900 dark:text-white">Online Store</h3>
+                <p class="text-gray-600 dark:text-gray-200">A platform for selling products with a great user experience.</p>
+                <a href="#" class="mt-4 inline-block text-amber-500 dark:text-cyan-400 hover:text-amber-400 dark:hover:text-cyan-300 transition-all duration-300">View Details</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gradient-to-r from-blue-900 to-blue-700 dark:from-gray-900 dark:to-gray-800 text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl sm:text-4xl font-semibold mb-8" data-aos="fade-up">Contact Us</h2>
+        <p class="text-base sm:text-lg max-w-2xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="100">
+            For collaboration or more information, fill out the form below.
+        </p>
+        <form id="contact-form" class="max-w-lg mx-auto space-y-6" data-aos="fade-up" data-aos-delay="200">
+            <div>
+                <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        class="w-full p-4 rounded-lg text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-amber-400 dark:focus:ring-cyan-500 transition-all duration-300"
+                        required
+                >
+            </div>
+            <div>
+                <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Your Email"
+                        class="w-full p-4 rounded-lg text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-amber-400 dark:focus:ring-cyan-500 transition-all duration-300"
+                        required
+                >
+            </div>
+            <div>
+          <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  class="w-full p-4 rounded-lg text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-700 h-40 focus:ring-2 focus:ring-amber-400 dark:focus:ring-cyan-500 transition-all duration-300"
+                  required
+          ></textarea>
+            </div>
+            <button
+                    type="submit"
+                    class="bg-amber-500 dark:bg-cyan-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-amber-600 dark:hover:bg-cyan-700 transition-all duration-300 transform hover:scale-105"
+            >
+                Send Message <i class="fas fa-paper-plane ml-2"></i>
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 dark:bg-gray-900 text-white py-6 text-center">
+    <p>© 2025 Our Company. All rights reserved.</p>
+    <div class="mt-2">
+        <a href="#" class="text-amber-400 dark:text-cyan-400 hover:text-amber-300 dark:hover:text-cyan-300 mx-2 transition-all duration-300"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-amber-400 dark:text-cyan-400 hover:text-amber-300 dark:hover:text-cyan-300 mx-2 transition-all duration-300"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-amber-400 dark:text-cyan-400 hover:text-amber-300 dark:hover:text-cyan-300 mx-2 transition-all duration-300"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
